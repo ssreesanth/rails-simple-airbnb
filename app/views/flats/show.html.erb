@@ -1,0 +1,12 @@
+<h2>Details</h2>
+
+<h4><%= @flat.name %></h4>
+<p><%= @flat.address %></p>
+<p><%= @flat.description %></p>
+<p><%= @flat.price_per_night %></p>
+<p><%= @flat.number_of_guests %></p>
+
+
+<div class="btn mt-4"><p><%= link_to "All Flats", flats_path %></p></div>
+<div class="btn mt-4"><p><%= link_to "Add a Flat", new_flat_path %></p></div>
+<div class="btn mt-4"><p><%= link_to "Edit Flat", edit_flat_path %></p></div>

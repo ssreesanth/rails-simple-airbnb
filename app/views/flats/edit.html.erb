@@ -1,0 +1,14 @@
+<h1>Update Flat</h1>
+
+
+<%= simple_form_for(@flat) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%# <%= f.input :picture_url %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+
+<div class="btn mt-4"><p><%= link_to "All Flats", flats_path %></p></div>

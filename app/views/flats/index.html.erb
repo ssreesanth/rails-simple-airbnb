@@ -1,0 +1,10 @@
+<h1>All Flats</h1>
+
+<% @flats.each do |flat| %>
+  <p><%= link_to flat.name, flat %></p>
+  <p><%= link_to "Remove", flat_path(flat),
+    data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%></p>
+<% end %>
+
+
+<div class="btn mt-4"><p><%= link_to "Add a Flat", new_flat_path %></p></div>
